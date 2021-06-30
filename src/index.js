@@ -1,17 +1,56 @@
-import React from 'react';
+import React, { Suspense } from 'react'
+import i18next from 'i18next'
+import { initReactI18next } from 'react-i18next'
+import HttpApi from 'i18next-http-backend'
+import LanguageDetector from 'i18next-browser-languagedetector'
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import "./index.css"
+import 'semantic-ui-css/semantic.min.css'
+
+let darkMode = localStorage.getItem('theme')=== 'theme-dark'
+
+i18next
+  .use(HttpApi)
+  .use(LanguageDetector)
+  .use(initReactI18next)
+  .init({
+    supportedLngs: ['en', 'ru', 'cn'],
+    fallbackLng: 'en',
+    debug: false,
+    // Options for language detector
+    detection: {
+      order: ['path', 'cookie', 'htmlTag'],
+      caches: ['cookie'],
+    },
+    // react: { useSuspense: false },
+    backend: {
+      loadPath: '/assets/locales/{{lng}}/translation.json',
+    },
+  })
+
+
+  const loadingMarkup = (
+    <div style={{display:"flex", color:"#5A6AF0", justifyContent:"center", alignItems:"center", width:"100vr", height:"100vh", color: darkMode ? "#fff" : "#5A6BF0", backgroundColor: darkMode ? "#000" : "#F7F8FD"}}>
+      <h1 >Loading...</h1>
+    </div>
+  )
+
+
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Suspense fallback={loadingMarkup}>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </Suspense>,
   document.getElementById('root')
-);
+)
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

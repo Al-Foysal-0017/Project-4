@@ -1,0 +1,127 @@
+.containerPoolsRemoveLiq{
+    display: flex;
+    /* height: 172vh; */
+    height: 272vh;
+}
+.boxContainerRightPoolsOptionCenter{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    max-height: 600px;
+}
+.boxContainerPoolsOptionX{
+    /* height: 140vh; */
+    height: 900px;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 25px;
+    border: 0.5px solid #D8D8D8;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.boxContainerLeftPoolsRemoveLiq{
+    flex: 4;
+    /* height: 140vh; */
+    height: 900px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 25px;
+    border: 0.5px solid #D8D8D8;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+.boxContainerRightPoolsRemoveLiq{
+    flex: 8;
+    /* height: 139.7vh; */
+    height: 899px;
+    width: 100%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.PoolsRemLiqHeader{
+    display: flex;
+    align-self: center;
+    font-size: 20px;
+    color: #5A6AF0;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.withdrawBox{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    max-width: 350px;
+}
+.withdrawBoxRow1{
+    flex: 4;
+    display: flex;
+}
+.withdrawBoxRow2{
+    flex: 4;
+    display: flex;
+}
+.withdrawBoxRow3{
+    flex: 4;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #E5E5E5;
+    padding: 8px;
+    margin: 2px;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.withdrawBoxCol1{
+    flex: 6;
+    border: 1px solid #E5E5E5;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+.withdrawBoxCol2{
+    flex: 6;
+    border: 1px solid #E5E5E5;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+.imagePools{
+    width: 25px;
+    height: 25px;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+
+
+
+.boxContainerPoolsOptionSSS{
+    height: 100%;
+    max-height: 650px;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 25px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+
+@media screen and (max-width: 950px){
+    .containerPoolsRemoveLiq{
+        display: none;
+    }
+ }

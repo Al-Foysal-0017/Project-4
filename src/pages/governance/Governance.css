@@ -1,0 +1,471 @@
+
+.containerGov{
+    display: flex;
+    /* height: calc(100vh - 65px); */
+    height: 130vh;
+}
+
+.containerLeftGov{
+    flex: 1;
+}
+
+.containerRightGov{
+    flex: 1;
+}
+
+.containerCenterGov{
+    flex: 11;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerCenterHeaderGov{
+    display: flex;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #323742;
+}
+
+.boxContainerGov{
+    height: 100%;
+    max-height: 750px;
+    width: 100%;
+    /* background-color: #000; */
+    border-radius: 25px;
+    border: 0.5px solid #D8D8D8;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+    max-width: 1600px;
+}
+.boxContainerTopHeaderGov{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+
+.boxContainerLeftGov{
+    flex: 4;
+    height: 100%;
+    /* max-height: 399px; */
+    width: 100%;
+    max-width: 400px;
+    border-radius: 25px;
+    border: 0.5px solid #D8D8D8;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    min-width: 280px;
+}
+.boxContainerLeftGovTop{
+    flex: 5;
+    max-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* margin-left: 15px; */
+    padding-left: 15px;
+    padding-left: 15px;
+}
+.boxContainerLeftGovBottom{
+    flex: 7;
+    border-top: 1px solid #d8d9dd;
+}
+
+.boxContainerRightGov{
+    flex: 8;
+    height: 100%;
+    /* max-height: 398px; */
+    width: 100%;
+    /* max-width: 400px; */
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.boxContainerRightGovTop{
+    flex: 2;
+    max-height: 215px;
+    /* display: flex; */
+}
+.boxContainerRightGovTopHeader{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+.boxContainerRightGovTopButton{
+    display: flex;
+    font-size: 13px;
+    padding: 8px 22px 8px 22px;
+    margin-top: 20px;
+    border-radius: 25px;
+}
+.boxContainerRightGovCenter{
+    flex: 3;
+    border-top: 1px solid #d8d9dd;
+    max-height: 200px;
+}
+.boxContainerRightGovCenterForm{
+    padding-top: 50px;
+    padding-right: 90px;
+    padding-left: 90px;
+}
+.boxContainerRightGovBottom{
+    flex: 7;
+    /* border-top: 1px solid #d8d9dd; */
+    /* justify-content: center; */
+    display: flex;
+    justify-content: center;  
+}
+.boxContainerRightGovBottomBox{
+    height: 200px;
+    width: 90%;
+    background-color: #fff;
+    border-radius: 25px;
+    justify-content: center;
+    /* text-align: center; */
+    border: 1px solid #d8d9dd;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+}
+.boxContainerRightGovBottomButton{
+    background-color: #fff;
+    color: #5A6AF0;
+    font-size: 12px;
+    padding: 3px 10px 3px 10px;
+    margin-left: 40px;
+    /* padding-left: 40px; */
+    margin-top: 30px;
+}
+.boxContainerRightGovBottomHeader{
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    /* margin-left: 40px; */
+    padding-left: 40px;
+}
+.boxContainerRightGovBottomBody{
+    font-size: 12px;
+    color: #A3B7A7;
+    /* margin-left: 40px; */
+    padding-left: 40px;
+}
+.boxContainerRightGovBottomFooter{
+    font-weight: 500;
+    font-size: 13px;
+    /* margin-left: 40px; */
+    padding-left: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.HeaderOverview{
+    font-size: 20px;
+    font-weight: 500;
+    color: #5A6AF0;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+.overViewItems{
+    padding-left: 15px;
+}
+.overViewItem{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.overViewItemRow1{
+    font-size: 14px;
+    font-weight: bold;
+}
+.overViewItemRow2{
+    font-size: 12px;
+    color: #A3B7A7;
+}
+.HeaderManageLocking{
+    font-size: 20px;
+    font-weight: 500;
+    color: #5A6AF0;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    /* margin-left: 15px; */
+    padding-left: 30px;
+}
+.ManageItems{
+    padding-left: 30px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    padding-right: 30px;
+}
+.ManageItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.label{
+    font-size: 13px;
+    color: #A3B7A7;
+}
+.setTwoBox{
+    border: 1px solid #D8D8D8;
+    border-radius: 15px;
+    /* padding-top: 10px ; */
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 300px;
+}
+.setBox1{
+    border: 1px solid #5A6AF0;
+    padding-top: 12px ;
+    padding-bottom: 12px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.setBox2{
+    display: flex;
+    /* text-align: center; */
+    /* align-self: center; */
+    justify-content: center;
+    color: #A3B7A7;
+}
+.GovButton{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.footerGov{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.footerRightGov{
+    padding-top: 50px;
+    color: #5A6AF0;
+    align-items: center;
+}
+
+.footerRight1Gov{
+    padding-right: 20px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.footerRight2Gov{
+    padding-right: 20px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.DatePicker{
+    text-align: center;
+    border: 1px solid #5A6AF0 !important ;
+    padding: 15px !important;
+    border-radius: 15px;
+    color: #fff!important;
+}
+
+
+.setTwoBoxForDate{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 300px;
+
+}
+.MuiInputBase-input .MuiInput-input .MuiInputBase-inputAdornedEnd{
+    border-bottom: none!important;
+}
+
+
+
+
+@media screen and (max-width: 1000px){ 
+    .containerGov{
+        display: flex;
+        height: 265vh;
+        padding-right: 50px;
+        padding-left: 50px;   
+    }
+    .boxContainerGov{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 750px;
+    }
+    .boxContainerLeftGov{
+        flex: 5;
+        max-width: 1400px;
+        border-radius: 25px;
+        border:none;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+        box-shadow: none;
+        border: none!important;
+    }
+    .boxContainerRightGov{
+        margin-top: 70px;
+        flex: 7;
+        height: 100%;
+        max-height: 2000px;
+        width: 100%;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        /* border-top: 1px solid #D8D8D8; */
+        box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    }
+    .boxContainerLeftGovTop{
+        flex: 5;
+        max-height: 1400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        margin-left: 0;
+        padding-left: 0;
+        
+    }
+    .boxContainerRightGovCenterForm{
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .HeaderOverview{
+        margin-top: 25px;
+    }
+    .overViewItems{
+        display: flex;  
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+    .overViewItem{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .boxContainerLeftGovBottom{
+        flex: 7;
+        border-top: 1px solid #d8d9dd;
+    }
+    .boxContainerRightGov{
+        flex: 8;
+        height: 100%;
+        max-height: 1400px;
+        width: 100%;
+        /* max-width: 400px; */
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+    .boxContainerRightGovTop{
+        flex: 2;
+        max-height: 250px;
+        /* display: flex; */
+        padding-right: 50px;
+    }
+    .boxContainerRightGovCenter{
+        flex: 3;
+        border-top: 1px solid #d8d9dd;
+        max-height: 1400px;
+    }
+    .boxContainerRightGovBottom{
+        flex: 7;
+        /* border-top: 1px solid #d8d9dd; */
+        /* justify-content: center; */
+        display: flex;
+        justify-content: center;  
+    }
+    .setTwoBox{
+        width: 80%;
+        max-width: 500px;
+        align-self: center;
+    }
+    .setTwoBoxForDate{
+        max-width: 380px;
+    }
+    .ManageItem{
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+    .HeaderManageLocking{
+        margin-top: 25px;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 650px){ 
+    .containerGov{
+        display: flex;
+        height: 265vh;
+        padding-right: 20px;
+        padding-left: 20px; 
+        /* border: none; */
+    }
+    .boxContainerGov{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* max-width: 450px; */
+        border: none;
+    }
+    .setTwoBox{
+        width: 95%;
+    }
+    .ManageItem{
+        margin-top: 2px;
+        margin-bottom: 15px;
+    }
+    .HeaderManageLocking{
+        margin-top: 5px;
+    }
+    .HeaderOverview{
+        margin-top: 2px;
+    }
+    .overViewItems{
+        display: flex;  
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+    .overViewItem{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 2px;
+    }
+    .boxContainerRightGov{
+        margin-top: 120px;
+    }
+    .boxContainerRightGovTopButton{
+        /* margin-right: 20px; */
+        padding: 5px;
+        border-radius: 10px;
+    }
+    .boxContainerRightGovBottomBody{
+        display: none;
+    }
+
+}

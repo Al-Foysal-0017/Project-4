@@ -1,0 +1,10 @@
+.ModeSet{
+    color: gray;
+    font-size: 25px;
+    margin-top: 8px;
+    margin-right: 12px;
+    margin-left: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  

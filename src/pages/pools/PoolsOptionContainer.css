@@ -1,0 +1,312 @@
+.containerPoolsOption{
+    display: flex;
+    height: 110vh;
+}
+.containerLeftPoolsOption{
+    flex: 1;
+}
+
+.containerRightPoolsOption{
+    flex: 1;
+}
+
+.containerCenterPoolsOption{
+    flex: 11;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.containerCenterHeaderPoolsOptionBox{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.containerCenterHeaderPoolsOptionBoxLeft{
+    flex: 2.5;
+    width: 100vr;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: start;
+    padding-left: 30px;
+    padding-top: 30px;
+    color: #5A6AF0;
+}
+.containerCenterHeaderPoolsOptionBoxRight{
+    flex: 2.5;
+    width: 100%;
+}
+.containerCenterHeaderPoolsOptionCenter{
+    display: flex;
+    flex: 7;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #323742;
+    width: 90%;
+    text-align: center;
+    justify-content: center;
+    
+}
+.boxContainerPoolsOption{
+    height: 100%;
+    max-height: 650px;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 25px;
+    border: 0.5px solid #D8D8D8;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.boxContainerTopHeaderPoolsOption{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+.boxContainerLeftPoolsOption{
+    flex: 4;
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 25px;
+    border: 0.5px solid #D8D8D8;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+.boxContainerLeftPoolsOptionTop{
+    max-height: 335px;
+    padding-top: 40px;
+    padding-left: 25px;
+}
+.boxContainerLeftPoolsOptionTopButton{
+    background-color: #fff;
+    color: #5A6AF0;
+    border: 1px solid #D8D8D8;
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px;
+    margin: 2px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #5A6AF0;
+}
+.boxContainerLeftPoolsOptionTopValuesSet{
+    padding-top: 25px;
+}
+.boxContainerLeftPoolsOptionTopValues{
+    padding-left: 25px; 
+    padding-right: 25px;
+    padding-bottom: 10px;
+    border: none;
+    background-color: #ffffff;
+}
+.boxContainerLeftPoolsOptionTopValue{
+    font-size: 14px;
+    font-weight: bold;
+    font-size: 12px;
+}
+.boxContainerLeftPoolsOptionTopValueName{
+    font-size: 12px;
+    color: #A3B7A7;
+}
+.boxContainerLeftPoolsOptionBottom{
+    border-top: 1px solid #d8d9dd;
+}
+
+.boxContainerRightPoolsOption{
+    flex: 8;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.boxContainerRightPoolsOptionTop{
+    flex: 2;
+    max-height: 170px;
+    padding-top: 30px;
+    padding-left: 25px;
+}
+.boxContainerRightPoolsOptionTopLink{
+    display: flex;  
+    flex-wrap: wrap;
+}
+.boxContainerRightPoolsOptionTopButton{
+    border-radius: 5px;
+    border: 1px solid #d8d9dd;
+    padding: 10px 25px 10px 25px;
+    background: #fff;
+    margin-right: 2px;
+    cursor: pointer;
+    margin-top: 12px;
+}
+.boxContainerRightPoolsOptionCenter{
+    flex: 4;
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    width: 70%;
+    max-width: 550px;
+}
+.boxContainerRightPoolsOptionCenterHeader{
+    font-size: 20px;
+    font-weight: bold;
+    color: #5A6AF0;
+    padding-left: 30px;
+    margin-top: 10px;
+}
+.boxContainerRightPoolsOptionCenterList{
+    display: flex;
+    flex-direction: column;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 20px;
+}
+.boxContainerRightPoolsOptionCenterListItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid #d8d9dd;
+    padding: 8px;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 15px;
+    margin-bottom: 8px;
+    max-width: 450px;
+    min-width: 250px;
+}
+.boxContainerRightPoolsOptionBottom{
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    
+}
+.boxContainerRightPoolsOptionBottomBox{
+    height: 200px;
+    width: 90%;
+    background-color: #fff;
+    border-radius: 25px;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #d8d9dd;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+}
+.footerPoolsOption{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.footerRightPoolsOption{
+    padding-top: 50px;
+    color: #5A6AF0;
+    align-items: center;
+}
+
+.footerRight1PoolsOption{
+    padding-right: 20px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.footerRight2PoolsOption{
+    padding-right: 20px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.currencyImage{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.footerPoolOption{
+    font-size: 12px;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 30px;
+}
+.footerPoolOptionText{
+    font-size: 12px;
+    color: gray;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.footerPoolOptionButton{
+    border-radius: 50px;
+    white-space: nowrap;
+    padding: 10px 30px 10px 30px;
+    font-size: 15px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    color: #fff;
+    background: #5A6AF0;
+    cursor: pointer;
+    width: 200px;
+}
+
+.footerPoolOptionButton:hover {
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #5A6AF0;
+    border: 1px solid #5A6AF0;
+}
+
+.BackLinkSpan{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+}
+.BackLink{
+    text-decoration: none;
+    color: #5A6AF0;
+}
+
+
+@media screen and (max-width: 480px){
+    .HeroPPools{
+    font-size: 32px;
+    }
+}
+
+
+
+@media screen and (max-width: 950px){
+   .containerPoolsOption{
+       display: none;
+   }
+
+   .boxContainerRightPoolsOptionTopButton{
+       margin-top: 2px;
+   }
+}

@@ -1,0 +1,297 @@
+.containerGovInfo{
+    display: flex;
+    /* height: calc(100vh - 65px); */
+    height: 130vh;
+}
+
+.containerLeftGovInfo{
+    flex: 1;
+}
+
+.containerRightGovInfo{
+    flex: 1;
+}
+
+.containerCenterGovInfo{
+    flex: 11;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxContainerGovInfo{
+    height: 100%;
+    max-height: 750px;
+    width: 100%;
+    /* background-color: #000; */
+    border-radius: 25px;
+    border: 0.5px solid #D8D8D8;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+    max-width: 1600px;
+} 
+.boxContainerTopHeaderGovInfo{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+
+.boxContainerLeftGovInfo{
+    flex: 8;
+    height: 100%;
+    /* max-height: 399px; */
+    width: 100%;
+    /* max-width: 400px; */
+    border-radius: 25px;
+    
+    /* box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1); */
+    display: flex;
+    flex-direction: column;
+}
+
+.boxContainerLeftGovInfoTop{
+    flex: 12;
+    padding-left: 50px;
+    padding-right: 50px;
+    /* background-color: aqua; */
+}
+/* .boxContainerLeftGovInfoBottom{
+    flex: 5;
+    background-color: beige;
+} */
+.boxContainerLeftGovInfoTopHeader{
+    margin-top: 50px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #5A6AF0;
+}
+.boxContainerLeftGovInfoTopHeaderInfo{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.description{
+    padding-bottom: 15px;
+}
+.LeftGontInfoFooterHeader{
+    font-size: 12px;
+    display: flex;
+    align-self: center;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: bold;
+    color: #A3B7A7;
+}
+.LeftGontInfoFooterYesNo{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.LeftGontInfoFooterYes{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #fff;
+    border: 1px solid #5A6AF0;
+    color: #5A6AF0;
+    border-radius: 25px;
+    font-size: 13px;
+    padding: 5px 30px 5px 30px;
+}
+.LeftGontInfoFooterNo{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #fff;
+    border: 1px solid #5A6AF0;
+    color: #5A6AF0;
+    border-radius: 25px;
+    font-size: 13px;
+    padding: 5px 30px 5px 30px;
+}
+
+
+
+.boxContainerLeftGovTop{
+    flex: 5;
+    max-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin-left: 15px;
+    padding-left: 15px;
+}
+/* .boxContainerLeftGovBottom{
+    flex: 7;
+    border-top: 1px solid #d8d9dd;
+} */
+
+.boxContainerRightGovInfo{
+    flex: 4;
+    height: 100%;
+    /* max-height: 398px; */
+    width: 100%;
+    /* max-width: 400px; */
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    border: 0.5px solid #D8D8D8;
+}
+.boxContainerRightGovInfoTop{
+    flex: 6;
+    /* max-height: 115px; */
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.boxContainerRightGovInfoTopHeader{
+    margin-top: 50px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #5A6AF0;
+}
+.boxContainerRightGovInfoTopDate{
+    font-size: 12px;
+    display: flex;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #A3B7A7;
+}
+.boxContainerRightGovInfoTopDate2{
+    font-size: 14px;
+    font-weight: 500;
+}
+.boxContainerRightGovInfoTopDate3{
+    font-size: 14px;
+}
+.boxContainerRightGovInfoTopProposed{
+    font-size: 12px;
+    display: flex;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #A3B7A7;
+}
+.boxContainerRightGovInfoTopProposedValue{
+    font-size: 14px;
+}
+.boxContainerRightGovInfoTopSupport{
+    font-size: 12px;
+    display: flex;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #A3B7A7;
+}
+.boxContainerRightGovInfoTopSupportValue{
+    font-size: 13px;
+    
+}
+.boxContainerRightGovInfoTopMinimum{
+    font-size: 12px;
+    display: flex;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #A3B7A7;
+}
+.boxContainerRightGovInfoTopMinimumValue{
+    font-size: 13px;
+}
+
+
+.boxContainerRightGovInfoBottom{
+    flex: 6;
+    border-top: 1px solid #d8d9dd;
+    /* justify-content: center; */
+    display: flex;
+    justify-content: center;  
+}
+
+.boxContRightGovInfoBottHeader{
+    margin-top: 30px;
+    font-size: 21px;
+    font-weight: 500;
+    color: #5A6AF0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.RightGontInfoFooterButton{
+    padding: 5px 20px 5px 20px;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #5A6AF0;
+    color: #5A6AF0;
+    border-radius: 25px;
+    margin-left: 40px;
+}
+.boxContRightGovInfoBottProgYES{
+    padding-top: 30px;
+    padding-bottom: 6px;
+}
+.boxContRightGovInfoBottProgNo{
+    /* padding-top: 20px; */
+    padding-bottom: 20px;
+}
+.boxContRightGovInfoBottFooter{}
+.boxContRightGovInfoBottFooterYes{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    font-size: 13px;
+}
+.boxContRightGovInfoBottFooterNo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.ui.progress .bar {
+    height: 9px !important;
+}
+
+
+
+
+@media screen and (max-width: 1000px){
+    .containerGovInfo{
+        display: flex;
+        box-shadow: none;
+    }
+    .LeftGontInfoFooterYesNo{
+        margin-bottom: 100px;
+    }
+    .boxContainerRightGovInfoTop{
+        margin-bottom: 40px;
+    }
+    .boxContRightGovInfoBottFooter{
+        margin-bottom: 60px;
+    }
+    .boxContainerLeftGovInfo{
+        height: 900px;
+    }
+    .boxContainerRightGovInfo{
+        margin-top: 150px;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .boxContainerRightGovInfo{
+        margin-top: 60px;
+        border: none;
+    }
+    .boxContainerLeftGovInfo{
+        height: 1100px;
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,56 @@
+.chart {
+    margin: 20px;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    border-radius: 25px;
+    max-width: 350px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .chartTitle {
+    margin-bottom: 20px;
+  }
+
+  .chartTop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 300px;
+  }
+
+  .chartTopLeftButton{
+    padding: 4px 8px 4px 8px;
+    background: #F7F8FD;
+    font-size: 12px;
+    border-radius: 10px;
+    margin-left: 5px;
+    color: #5A6AF0;
+  }
+
+  .chartTopRightButton{
+    padding: 4px 8px 4px 8px;
+    background: #F7F8FD;
+    font-size: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+    color: #5A6AF0;
+    margin-right: 3px;
+  }
+  
+
+
+@media screen and (max-width: 550px){
+  .ResponsiveDesktop{
+      display: none;
+  }
+}
+
+@media screen and (min-width: 551px){
+  .ResponsiveMobile{
+      display: none;
+  }
+}

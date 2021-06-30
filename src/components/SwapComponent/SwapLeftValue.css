@@ -1,0 +1,84 @@
+.boxContainerLeftTop{
+    flex: 2;
+    /* background-color: aliceblue; */
+    margin-top: 30px;
+}
+.boxContainerLeftTopHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.boxContainerLeftTopHeaderLeft{
+    
+    font-weight: bold;
+    font-size: 25px;
+    color: #5A6AF0;
+}
+.boxContainerLeftTopHeaderRight{
+    /* font-weight: bold; */
+    font-size: 12px;
+    color: #5A6AF0;
+}
+.boxContainerLeftCenter{
+    flex: 2.5;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.boxContainerLeftCenterShowBox{
+    width: 70%;
+    max-width: 350px;
+    height: 45px;
+    border: 1px solid #5A6AF0;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2px;
+}
+.boxContainerLeftCenterShowBoxLeft{
+    flex: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.boxContainerLeftCenterShowBoxRight{
+    flex: 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+.boxContainerLeftBottom{
+    flex: 7.5;
+    /* background-color: beige; */
+    width: 70%;
+    max-width: 350px;
+    display: flex;
+    border-radius: 10px;
+    align-self: center;
+    border: 1px solid #D8D8D8;
+    margin-bottom: 25px;
+}
+.boxContainerLeftBottomBox{
+    width: 100%;
+    max-width: 350px;
+}
+.boxContainerLeftBottomBoxItems{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* border: 1px solid #fff; */
+    width: 100%;
+    /* border-radius: 15px; */
+    height: 45px;
+}
+.boxContainerLeftBottomBoxItem{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+}
