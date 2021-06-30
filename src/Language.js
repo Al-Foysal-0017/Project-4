@@ -72,6 +72,16 @@
         document.title = t('app_title')
       }, [currentLanguage, t])
     
+      let TextLang
+      if(currentLanguageCode==="en"){
+        TextLang = languages[0].value
+      }
+      if(currentLanguageCode==="ru"){
+        TextLang = languages[1].value
+      }
+      if(currentLanguageCode==="cn"){
+        TextLang = languages[2].value
+      }
 
       return (
         <div className="">
@@ -106,9 +116,13 @@
                     //  }
                     options={languages}
                     search
-                    text={currentLanguageCode==="en" && languages[0].value
-                    || currentLanguageCode==="ru" && languages[1].value
-                    ||currentLanguageCode==="cn" && languages[2].value}
+                    // text={currentLanguageCode==="en" && languages[0].value
+                    // || currentLanguageCode==="ru" && languages[1].value
+                    // ||currentLanguageCode==="cn" && languages[2].value
+                    //  }
+                    text={
+                      TextLang
+                    }
                   />
 
 

@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React from 'react'
 import Navbar from '../../components/Navbar'
 import { BiChevronRightCircle } from "react-icons/bi";
 import "./Governance.css"
@@ -27,11 +27,11 @@ const Governance = () => {
         { key: 'f', text: 'Two', value: 'two' },
         { key: 'o', text: 'Three', value: 'three' },
       ]
-      const [selectedDate, setSelectedDate] = React.useState(new Date('2014-08-18T21:11:54'));
+    //   const [selectedDate, setSelectedDate] = React.useState(new Date('2014-08-18T21:11:54'));
 
-  const handleDateChange = (date) => {
-    setSelectedDate(date);
-  };
+//   const handleDateChange = (date) => {
+//     setSelectedDate(date);
+//   };
     return (
         <div>
             <Navbar/>

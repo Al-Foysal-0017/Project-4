@@ -1,7 +1,7 @@
 import React from 'react'
 import { Segment } from 'semantic-ui-react'
 import bootlogo from "../../../images/logo1.png"
-import { DatePicker, Space } from 'antd';
+import { DatePicker } from 'antd';
 import moment from 'moment';
 import { useTranslation } from 'react-i18next'
 const dateFormat = 'YYYY/MM/DD';

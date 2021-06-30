@@ -2,11 +2,11 @@
         import "./GovernanceInfo.css"
         import React from 'react'
         import Navbar from '../../components/Navbar'
-        import { BiChevronRightCircle } from "react-icons/bi";
+        // import { BiChevronRightCircle } from "react-icons/bi";
         import "./Governance.css"
         import { Link } from 'react-router-dom';
-        import { Grid } from 'semantic-ui-react';
-        import { Form, Select } from 'semantic-ui-react'
+        // import { Grid } from 'semantic-ui-react';
+        // import { Form, Select } from 'semantic-ui-react'
         import { Progress } from 'semantic-ui-react'
         import { AiOutlineLeft } from "react-icons/ai";
         import { useTranslation } from 'react-i18next'
@@ -14,11 +14,11 @@
         const GovernanceInfo = () => {
             const { t } = useTranslation()
             let darkMode = localStorage.getItem('theme')=== 'theme-dark';
-            const Options = [
-                { key: 'm', text: 'One', value: 'one' },
-                { key: 'f', text: 'Two', value: 'two' },
-                { key: 'o', text: 'Three', value: 'three' },
-              ]
+            // const Options = [
+            //     { key: 'm', text: 'One', value: 'one' },
+            //     { key: 'f', text: 'Two', value: 'two' },
+            //     { key: 'o', text: 'Three', value: 'three' },
+            //   ]
             return (
                 <div>
                     <Navbar/>

@@ -31,7 +31,7 @@ i18next
 
 
   const loadingMarkup = (
-    <div style={{display:"flex", color:"#5A6AF0", justifyContent:"center", alignItems:"center", width:"100vr", height:"100vh", color: darkMode ? "#fff" : "#5A6BF0", backgroundColor: darkMode ? "#000" : "#F7F8FD"}}>
+    <div style={{display:"flex",  justifyContent:"center", alignItems:"center", width:"100vr", height:"100vh", color: darkMode ? "#fff" : "#5A6BF0", backgroundColor: darkMode ? "#000" : "#F7F8FD"}}>
       <h1 >Loading...</h1>
     </div>
   )
