@@ -12,7 +12,24 @@
 
 .ui.form .field > label {
   color:  #A3B7A7 !important;
+  margin-left: 7px!important;
 }
+
+.ui.default.dropdown:not(.button)>.text, .ui.dropdown:not(.button)>.default.text {
+  color: #000 !important;
+}
+
+
+
+
+element.style {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 35px;
+  border-radius: 25px!important;
+}
+
 
 .item{
   display: flex!important;
@@ -22,4 +39,10 @@
 .ui.dropdown .menu>.item:first-child {
   border-top-width: 0;
 }
+
+ 
+.icon{
+  color: #5A6AF0;
+}
+
 

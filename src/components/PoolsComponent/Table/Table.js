@@ -37,15 +37,15 @@ const TableForPool = () => {
           </Table.Cell>
           <Table.Cell textAlign='center'>
           <div>
-              <div style={{display:"flex", justifyContent:"center"}}>
+              <div style={{display:"flex", justifyContent:"center", paddingBottom:"4px"}}>
                   <span><img src={DAIimage} className="currencyImage" alt="DAI"/></span>
                   <span className="boxContainerPoolsColumn2Value" style={{color: darkMode ? "#fff" : "#323742"}}>$4,534,375.88</span>
               </div>
-              <div style={{display:"flex", justifyContent:"center"}}>
+              <div style={{display:"flex", justifyContent:"center", paddingBottom:"4px"}}>
                   <span><img src={USDCimage} className="currencyImage" alt="DAI"/></span>
                   <span className="boxContainerPoolsColumn2Value" style={{color: darkMode ? "#fff" : "#323742"}}>$4,534,375.88</span>
               </div>
-              <div style={{ display:"flex", justifyContent:"center" }}>
+              <div style={{ display:"flex", justifyContent:"center", paddingBottom:"4px" }}>
                   <span><img src={TUDTimage} className="currencyImage" alt="DAI"/></span>
                   <span className="boxContainerPoolsColumn2Value" style={{color: darkMode ? "#fff" : "#323742"}}>$4,534,375.88</span>
               </div>
@@ -142,7 +142,7 @@ const TableForPool = () => {
           </Table.Cell>
           <Table.Cell textAlign='center'>
           <div>
-              <div style={{display:"flex", justifyContent:"center"}}>
+              <div style={{display:"flex", justifyContent:"center", paddingBottom:"4px"}}>
                   <span><img src={poolsImg2} className="currencyImage" alt="DAI"/></span>
                   <span className="boxContainerPoolsColumn2Value" style={{color: darkMode ? "#fff" : "#323742"}}>$4,534,375.88</span>
               </div>

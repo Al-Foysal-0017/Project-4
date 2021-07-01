@@ -38,11 +38,11 @@ const Navbar = ({toggle}) => {
                  <div className="NavMenu">
                     {pathname === "/" || pathname==="/swap/details" ?
                     <div className="NavItem">
-                    <Link className="NavLinks NavLinksActive" to="/" style={{color: darkMode ? "#ffffff" : "#323742"}}>{t('Swap')}</Link>
+                    <Link className="NavLinks NavLinksActive" to="/" style={{color: darkMode ? "#ffffff" : "#323742", }}>{t('Swap')}</Link>
                     </div>
                     :
                     <div className="NavItem">
-                        <Link className="NavLinks" to="/" style={{color: darkMode ? "#ffffff" : "#323742"}}>{t('Swap')}</Link>
+                        <Link className="NavLinks" to="/" style={{color: darkMode ? "#ffffff" : "#323742", borderBottom: darkMode ? "4px solid #323842" : "4px solid #fff"}}>{t('Swap')}</Link>
                     </div>
                     }
 
@@ -52,7 +52,7 @@ const Navbar = ({toggle}) => {
                     </div>
                     :
                     <div className="NavItem">
-                        <Link className="NavLinks" to="/pools" style={{color: darkMode ? "#ffffff" : "#323742"}}>{t('Pools')}</Link>
+                        <Link className="NavLinks" to="/pools" style={{color: darkMode ? "#ffffff" : "#323742", borderBottom: darkMode ? "4px solid #323842" : "4px solid #fff"}}>{t('Pools')}</Link>
                     </div>
                     }
 
@@ -62,7 +62,7 @@ const Navbar = ({toggle}) => {
                     </div>
                     :
                     <div className="NavItem">
-                        <Link className="NavLinks" to="/governance" style={{color: darkMode ? "#ffffff" : "#323742"}}>{t('Governance')}</Link>
+                        <Link className="NavLinks" to="/governance" style={{color: darkMode ? "#ffffff" : "#323742", borderBottom: darkMode ? "4px solid #323842" : "4px solid #fff"}}>{t('Governance')}</Link>
                     </div>
                     }
 
@@ -73,21 +73,32 @@ const Navbar = ({toggle}) => {
                     </div>
                     :
                     <div className="NavItem">
-                        <Link className="NavLinks" to="/more" style={{color: darkMode ? "#ffffff" : "#323742"}}>{t('More')}</Link>
+                        <Link className="NavLinks" to="/more" style={{color: darkMode ? "#ffffff" : "#323742", borderBottom: darkMode ? "4px solid #323842" : "4px solid #fff"}}>{t('More')}</Link>
                     </div>
                     }   
                  </div>
                  
                  <div className="NavBtn">
                  
+                  <div style={{marginTop:"0.2rem"}} className="ResponsiveLanguage">
                   <Language/>
+                  </div>
+                  
+                  <div style={{marginTop:"3px"}}>
                   <DarkMode/>
+                  </div>
 
                  <div >
                      {darkMode? 
-                     <Link to="/connect-wallet" className="NavBtnLinkDark">{t('Connect_Wallet')}</Link>
+                     <div
+                        className="NavBtnLinkDark">
+                        {t('Connect_Wallet')}
+                    </div>
                        :
-                    <Link to="/connect-wallet" className="NavBtnLink">{t('Connect_Wallet')}</Link> }                    
+                    <div
+                        className="NavBtnLink">
+                        {t('Connect_Wallet')}
+                    </div> }                    
                  </div>
                  </div>
                  

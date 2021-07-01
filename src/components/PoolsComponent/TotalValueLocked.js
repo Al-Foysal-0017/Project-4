@@ -5,19 +5,19 @@ const TotalValueLocked = () => {
     let darkMode = localStorage.getItem('theme')=== 'theme-dark'
     const { t } = useTranslation()
     return (
-        <div>
-            <button className="boxContainerLeftPoolsOptionTopValues"  style={{backgroundColor: darkMode ? "#323842" : "#fff"}}>
+        <div style={{display:"flex", flexWrap: "wrap"}}>
+            <span className="boxContainerLeftPoolsOptionTopValues"  style={{backgroundColor: darkMode ? "#323842" : "#fff", paddingTop:"3px"}}>
                 <div className="boxContainerLeftPoolsOptionTopValue" style={{color: darkMode ? "#ffffff" : "#323742"}}>$4,534,375.88</div>
                 <div className="boxContainerLeftPoolsOptionTopValueName">{t('Value_Locked')}</div>
-            </button>
-            <button className="boxContainerLeftPoolsOptionTopValues" style={{backgroundColor: darkMode ? "#323842" : "#fff"}}>
+            </span>
+            <span className="boxContainerLeftPoolsOptionTopValues" style={{backgroundColor: darkMode ? "#323842" : "#fff",  paddingTop:"3px"}}>
                 <div className="boxContainerLeftPoolsOptionTopValue" style={{color: darkMode ? "#ffffff" : "#323742"}}>$4,534,375.88</div>
                 <div className="boxContainerLeftPoolsOptionTopValueName">{t('Volume')} (24h)</div>
-            </button>
-            <button className="boxContainerLeftPoolsOptionTopValues" style={{backgroundColor: darkMode ? "#323842" : "#fff"}}>
+            </span>
+            <span className="boxContainerLeftPoolsOptionTopValues" style={{backgroundColor: darkMode ? "#323842" : "#fff",  paddingTop:"3px"}}>
                 <div className="boxContainerLeftPoolsOptionTopValue" style={{color: darkMode ? "#ffffff" : "#323742"}}>$4,534,375.88</div>
                 <div className="boxContainerLeftPoolsOptionTopValueName">{t('Fees')} (24h)</div>
-            </button>
+            </span>
         </div>
     )
 }

@@ -16,7 +16,7 @@
     import TablePoolsOptionLeft from "../../components/PoolsComponent/Table/TablePoolsOptionLeft.js";
     import LockingTable from "../../components/PoolsComponent/Table/LockingTable";
     import { useTranslation } from 'react-i18next'
-    import { DatePicker, Space } from 'antd';
+    import { DatePicker } from 'antd';
     import moment from 'moment';
     const dateFormat = 'YYYY/MM/DD';
     
@@ -55,10 +55,16 @@
                                 <div className="boxContainerLeftPoolsOptionTopValuesSet">
                                     <TotalValueLocked/>
                                 </div>
-                                <div style={{paddingLeft:"20px" ,paddingTop:"20px", paddingBottom:"10px"}} className="boxContainerLeftPoolsOptionTopValueName">
+                                {/* <div style={{paddingTop:"3px", paddingBottom:"1px"}} className="boxContainerLeftPoolsOptionTopValueName">
                                 {t('Underlying_Tokens')}
                                 </div>
-                                <span style={{paddingLeft:"20px"}}><UnderlyingTokens/></span>
+                                <span><UnderlyingTokens/></span> */}
+                                <div style={{paddingTop:"20px", paddingBottom:"5px", paddingLeft:"20px"}} className="boxContainerLeftPoolsOptionTopValueName">
+                                {t('Underlying_Tokens')} 
+                                </div>
+                                <div style={{paddingLeft:"8px",}}>
+                                <UnderlyingTokens/>
+                                </div>
                             </div>
                             <div className="boxContainerLeftPoolsOptionBottom" style={{borderTop: darkMode ? "1px solid #22262A" : "1px solid #D8D8D8",}}>
                             <Chart data={userData} title="User Analytics" grid dataKey="$"/>

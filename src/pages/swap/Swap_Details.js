@@ -8,6 +8,10 @@ import { BiCheckboxChecked } from "react-icons/bi";
 import { VscQuestion } from "react-icons/vsc";
 import { useTranslation } from 'react-i18next'
 import "./Swap_Details.css"
+import { Checkbox } from 'antd';
+function onChange(e) {
+    console.log(`checked = ${e.target.checked}`);
+}
 
 const Swap_Details = () => {
     let darkMode = localStorage.getItem('theme')=== 'theme-dark'
@@ -63,9 +67,9 @@ const Swap_Details = () => {
                        </div>
                        <div className="footerInfo">
                             <span className="footerInfoIcon">
-                               <BiCheckboxChecked size="25px" style={{color:"#A3B7A7"}}/>
-                               {/* Infinite approval - trust this contact forever */}
-                               {t('InfiAppo')}
+                               {/* <BiCheckboxChecked size="25px" style={{color:"#A3B7A7"}}/> */}
+                               <Checkbox onChange={onChange} style={{fontSize:"13px", color:"gray"}}>{t('InfiAppo')}</Checkbox>
+                               {/* {t('InfiAppo')} */}
                                <VscQuestion size="18px" style={{marginLeft:"5px", color:"gray"}}/>
                             </span>
                            <button className="footerButton">{t('Swap')}</button>

@@ -1,4 +1,4 @@
-
+/* boxContainerRightGovTopButton */
 .containerGov{
     display: flex;
     /* height: calc(100vh - 65px); */
@@ -26,7 +26,7 @@
     padding-top: 35px;
     padding-bottom: 20px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 22px;
     color: #323742;
 }
 
@@ -103,11 +103,14 @@
     padding-left: 20px;
 }
 .boxContainerRightGovTopButton{
-    display: flex;
-    font-size: 13px;
-    padding: 8px 22px 8px 22px;
+    display: inline-block;
+    /* display: flex; */
+    font-size: 14px;
+    padding: 11px 22px 11px 22px;
     margin-top: 20px;
     border-radius: 25px;
+    background-color: #5A6AF0;
+    margin-right: 20px;
 }
 .boxContainerRightGovCenter{
     flex: 3;
@@ -144,6 +147,9 @@
     margin-left: 40px;
     /* padding-left: 40px; */
     margin-top: 30px;
+    border: 1px solid #5A6AF0;
+    display: inline-block;
+    border-radius: 25px;
 }
 .boxContainerRightGovBottomHeader{
     font-weight: bold;
@@ -296,6 +302,7 @@
 .MuiInputBase-input .MuiInput-input .MuiInputBase-inputAdornedEnd{
     border-bottom: none!important;
 }
+
 
 
 

@@ -35,7 +35,7 @@
                                 </Link>
                             </div>
                         </div>                
-                        <div className="containerCenterHeaderPoolsOptionCenter" style={{color: darkMode ? "#ffffff" : "#323742"}}>{t('Governance')}</div>
+                        <div className="containerCenterHeaderPoolsOptionCenter" style={{color: darkMode ? "#ffffff" : "#323742",fontWeight: "bold",fontSize: "22px",}}>{t('Governance')}</div>
                         <div className="containerCenterHeaderPoolsOptionBoxRight"></div>
                     </div>
                            {/* <div className="containerCenterHeaderGov" style={{color: darkMode ? "#ffffff" : "#323742"}}>Governance</div> */}
@@ -94,23 +94,23 @@
                                     <div>
                                         <div className="boxContRightGovInfoBottHeader">
                                             <span>{t('Votes')}</span>
-                                            <span><button className="RightGontInfoFooterButton"  style={{background: darkMode ? "#5A6AF0" : "#fff", color: darkMode? "#fff":"#5A6AF0"}}>{t('Show_Voters')}</button></span>
-                                        </div>
-                                        <div className="boxContRightGovInfoBottProgYES">
-                                            <span style={{color: darkMode ? "#ffffff" : "#323742"}}>{t('Yes')}</span>
                                             <span>
-                                            <Progress percent={80} success >
-                                                <span style={{fontSize:"12px", color:"#A3B7A7"}}>14144.16</span>
-                                            </Progress>
+                                                <div className="RightGontInfoFooterButton"  style={{background: darkMode ? "#5A6AF0" : "#fff", color: darkMode? "#fff":"#5A6AF0"}}>
+                                                {t('Show_Voters')}
+                                                </div>
                                             </span>
                                         </div>
-                                        <div className="boxContRightGovInfoBottProgNo">
-                                            <span style={{color: darkMode ? "#ffffff" : "#323742"}}>{t('No')}</span>
-                                            <span>
-                                            <Progress percent={40} error>
-                                            <span style={{fontSize:"12px", color:"#A3B7A7"}}>14144.16</span>
+                                        <div className="boxContRightGovInfoBottProgYES" style={{display:"flex", flexDirection:"row", marginTop:"15px"}}>
+                                            <div style={{color: darkMode ? "#ffffff" : "#323742", marginRight:"7px"}}>{t('Yes')}</div>
+                                            <Progress percent={80} success style={{width:"100%", marginTop:"3px"}}>
+                                            <div style={{fontSize:"12px", color:"#A3B7A7", display:"flex", flexDirection:"row-reverse"}}>14144.16</div>
                                             </Progress>
-                                            </span>
+                                        </div>
+                                        <div className="boxContRightGovInfoBottProgNo" style={{display:"flex", flexDirection:"row",}}>
+                                            <div style={{color: darkMode ? "#ffffff" : "#323742", marginRight:"12px"}}>{t('No')}</div>
+                                            <Progress percent={40} error style={{width:"100%", marginTop:"3px"}}>
+                                            <div style={{fontSize:"12px", color:"#A3B7A7", display:"flex", flexDirection:"row-reverse"}}>14144.16</div>
+                                            </Progress>
                                         </div>
 
                                         <div className="boxContRightGovInfoBottFooter">

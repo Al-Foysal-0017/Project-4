@@ -5,7 +5,7 @@
     import cookies from 'js-cookie'
     import { Dropdown } from 'semantic-ui-react'
 
-
+ 
 
 
 
@@ -23,25 +23,40 @@
 
 
     const Chinese = () => <div onClick={() => {i18next.changeLanguage("cn")}}>
-      中國人
+      汉语
     </div>
 
-   
+   const showEnglishValue = <div style={{}}>
+     <img src="https://www.countryflags.io/gb/flat/32.png" alt="" style={{width:"25px", height:"25px", borderRadius:"25px", marginTop:"-3px", marginRight:"3px"}} />
+     ENG
+   </div>
+
+    const showRussiaValue = <div style={{}}>
+    <img src="https://www.countryflags.io/ru/flat/32.png" alt="" style={{width:"25px", height:"25px", borderRadius:"25px", marginTop:"-3px", marginRight:"3px"}} />
+    Русь
+    </div>
+
+
+    const showChineseValue = <div style={{}}>
+        <img src="https://www.countryflags.io/cn/flat/32.png" alt="" style={{width:"25px", height:"25px", borderRadius:"25px",  marginTop:"-3px", marginRight:"3px"}} />
+        汉语
+      </div>
+
 
     const languages = [
       {key: '222',
         code: 'en',
         text: English,
-        value: 'English',
+        value: showEnglishValue,
         name: 'English',
         country_code: 'gb',
-        image: {  src: 'https://www.countryflags.io/us/flat/32.png' },
+        image: {  src: 'https://www.countryflags.io/gb/flat/32.png' },
       },
       {
         key: '111',
         code: 'ru',
         text: Russian,
-        value: 'русский',
+        value: showRussiaValue,
         country_code: 'ru',
         name: 'русский',
         image: { src: 'https://www.countryflags.io/ru/flat/32.png' },
@@ -49,10 +64,10 @@
       {key: '333',
         code: 'cn',
         text: Chinese,
-        value: '中國人',
+        value: showChineseValue,
         // dir: 'rtl',
         country_code: 'cn',
-        name: '中國人',
+        name: '汉语',
         image: { src: 'https://www.countryflags.io/cn/flat/32.png' },
       },
     ]
@@ -103,19 +118,19 @@
 
 
                   <Dropdown
-                    style={{color: darkMode?"#fff":"#5A6AF0", marginTop:"19px", backgroundColor: darkMode ? "#22262A" :"#F7F8FD", padding:"5px 12px 5px 12px", borderRadius:"15px", fontWeight:"100"}}
+                    style={{color: darkMode?"#fff":"#5A6AF0", marginTop:"19px", backgroundColor: darkMode ? "#22262A" :"#F7F8FD", padding:"7px 12px 7px 12px", borderRadius:"15px", fontWeight:"100"}}
                     // button
                     inline
-                    className='icon'
+                    // className='icon'
                     floating
                     labeled
-                    icon='world'
+                    // icon='world'
                     // icon={currentLanguageCode==="en" && <img src="https://www.countryflags.io/us/flat/32.png" alt="" />
                     // || currentLanguageCode==="ar" && <img src="https://www.countryflags.io/us/flat/32.png" alt=""/>
                     // ||currentLanguageCode==="fr" && <img src="https://www.countryflags.io/us/flat/32.png" alt=""/>
                     //  }
                     options={languages}
-                    search
+                    // search
                     // text={currentLanguageCode==="en" && languages[0].value
                     // || currentLanguageCode==="ru" && languages[1].value
                     // ||currentLanguageCode==="cn" && languages[2].value
@@ -123,13 +138,8 @@
                     text={
                       TextLang
                     }
+                    icon="chevron down"
                   />
-
-
-
-
-
-
                 <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                 </ul>
               </div>

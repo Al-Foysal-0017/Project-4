@@ -13,15 +13,19 @@ import CurrencyName from '../../components/PoolsComponent/CurrencyName';
 import UnderlyingTokens from '../../components/PoolsComponent/UnderlyingTokens';
 import TotalValueLocked from '../../components/PoolsComponent/TotalValueLocked';
 import PoolTopbar from '../../components/PoolsComponent/PoolTopbar';
-import { BiCheckboxChecked } from "react-icons/bi";
+// import { BiCheckboxChecked } from "react-icons/bi";
 import { VscQuestion } from "react-icons/vsc";
 import TablePoolsOptionLeft from "../../components/PoolsComponent/Table/TablePoolsOptionLeft.js";
 import AddLiqTable from "../../components/PoolsComponent/Table/AddLiqTable";
 import { useTranslation } from 'react-i18next'
+import { Checkbox } from 'antd';
 
 const Pools_Add_Liquidity = () => {
     let darkMode = localStorage.getItem('theme')=== 'theme-dark'
     const { t } = useTranslation()
+    function onChange(e) {
+        console.log(`checked = ${e.target.checked}`);
+      }
     return (
         <div>
             <Navbar/>
@@ -53,10 +57,12 @@ const Pools_Add_Liquidity = () => {
                             <div className="boxContainerLeftPoolsOptionTopValuesSet">
                                 <TotalValueLocked/>
                             </div>
-                            <div style={{paddingTop:"20px", paddingBottom:"10px"}} className="boxContainerLeftPoolsOptionTopValueName">
+                            <div style={{paddingTop:"20px", paddingBottom:"5px", paddingLeft:"20px"}} className="boxContainerLeftPoolsOptionTopValueName">
                                 {t('Underlying_Tokens')} 
                             </div>
+                            <div style={{paddingLeft:"8px",}}>
                             <UnderlyingTokens/>
+                            </div>
                         </div>
                         <div className="boxContainerLeftPoolsOptionBottom" style={{borderTop: darkMode ? "1px solid #22262A" : "1px solid #D8D8D8"}}>
                         <Chart data={userData} title="User Analytics" grid dataKey="$"/>
@@ -69,7 +75,7 @@ const Pools_Add_Liquidity = () => {
 
 
                         <div className="boxContainerRightPoolsOptionCenter">
-                            <div className="boxContainerRightPoolsOptionCenterHeader">
+                            <div className="boxContainerRightPoolsOptionCenterHeader" style={{marginTop:"40px"}}>
                                 {t('Currencies')}
                             </div>
                             <div className="boxContainerRightPoolsOptionCenterList">
@@ -81,7 +87,7 @@ const Pools_Add_Liquidity = () => {
                                         </span>
                                         <span><img src={DAIimage} className="currencyImage" alt=""/></span>
                                         <span style={{paddingLeft:"8px", color:"#A3B7A7"}}>
-                                            DAI
+                                            DAI &nbsp; &nbsp;
                                         </span>
                                     </span>
                                     <span>
@@ -144,10 +150,10 @@ const Pools_Add_Liquidity = () => {
                         </div>
                         <div className="boxContainerRightPoolsOptionBottom">
                         <div className="footerPoolOptionText">
-                           {/* Infinite approval - trust this contact forever */}
                            <span className="footerInfoIcon">
-                               <BiCheckboxChecked size="25px" style={{color:"#A3B7A7"}}/>
-                                    {t('InfiAppo')}
+                               {/* <BiCheckboxChecked size="25px" style={{color:"#A3B7A7"}}/> */}
+                               <Checkbox onChange={onChange} style={{fontSize:"13px", color:"gray"}}>{t('InfiAppo')}</Checkbox>
+                                    {/* {t('InfiAppo')} */}
                                <VscQuestion size="18px" style={{marginLeft:"5px", color:"gray"}}/>
                             </span>
 

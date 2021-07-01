@@ -13,15 +13,19 @@ import CurrencyName from '../../components/PoolsComponent/CurrencyName';
 import UnderlyingTokens from '../../components/PoolsComponent/UnderlyingTokens';
 import TotalValueLocked from '../../components/PoolsComponent/TotalValueLocked';
 import PoolTopbar from '../../components/PoolsComponent/PoolTopbar';
-import { BiCheckboxChecked } from "react-icons/bi";
+// import { BiCheckboxChecked } from "react-icons/bi";
 import { VscQuestion } from "react-icons/vsc";
 import TablePoolsOptionLeft from "../../components/PoolsComponent/Table/TablePoolsOptionLeft.js";
 import RemoveLiqTable from "../../components/PoolsComponent/Table/RemoveLiqTable";
 import { useTranslation } from 'react-i18next'
+import { Checkbox } from 'antd';
 
 const Pools_Remove_Liquidity = () => {
     let darkMode = localStorage.getItem('theme')=== 'theme-dark'
     const { t } = useTranslation()
+    function onChange(e) {
+        console.log(`checked = ${e.target.checked}`);
+      }
     return (
         <div>
             <Navbar/>
@@ -55,10 +59,16 @@ const Pools_Remove_Liquidity = () => {
                             <div className="boxContainerLeftPoolsOptionTopValuesSet">
                                 <TotalValueLocked/>
                             </div>
-                            <div style={{paddingTop:"20px", paddingBottom:"1px", marginBottom:"-11px"}} className="boxContainerLeftPoolsOptionTopValueName">
+                            {/* <div style={{paddingTop:"3px", paddingBottom:"1px", marginBottom:"-19px"}} className="boxContainerLeftPoolsOptionTopValueName">
                                 {t('Underlying_Tokens')} 
                             </div>
-                            <span style={{paddingLeft:"20px"}}><UnderlyingTokens/></span>
+                            <span style={{paddingLeft:"20px"}}><UnderlyingTokens/></span> */}
+                            <div style={{paddingTop:"20px", paddingBottom:"5px", paddingLeft:"20px"}} className="boxContainerLeftPoolsOptionTopValueName">
+                                {t('Underlying_Tokens')} 
+                            </div>
+                            <div style={{paddingLeft:"8px",}}>
+                            <UnderlyingTokens/>
+                            </div>
                         </div>
                         <div className="boxContainerLeftPoolsOptionBottom" style={{borderTop: darkMode ? "1px solid #22262A" : "1px solid #D8D8D8"}}>
                         <Chart data={userData} title="User Analytics" grid dataKey="$"/>
@@ -92,7 +102,7 @@ const Pools_Remove_Liquidity = () => {
                                 <div className="boxContainerLeftCenterShowBoxRight">
                                     <span style={{fontSize:"10px", color:"#A3B7A7"}}>{t('Max')}</span>
                                     <img src={DAIimage} className="imageSmall" alt="" />
-                                    <span style={{color: darkMode ? "#ffffff" : "#323742"}}>DAI</span>
+                                    <span style={{color: darkMode ? "#ffffff" : "#323742"}}>DAI &nbsp; &nbsp;</span>
                                 </div>
                                 </div>
                             </div>
@@ -175,8 +185,9 @@ const Pools_Remove_Liquidity = () => {
 
                         <div style={{marginTop:"30px"}} className="footerPoolOptionText">
                            <span className="footerInfoIcon">
-                               <BiCheckboxChecked size="25px" style={{color:"#A3B7A7"}}/>
-                               {t('InfiAppo')}
+                               {/* <BiCheckboxChecked size="25px" style={{color:"#A3B7A7"}}/> */}
+                               {/* {t('InfiAppo')} */}
+                               <Checkbox onChange={onChange} style={{fontSize:"13px", color:"gray"}}>{t('InfiAppo')}</Checkbox>
                                <VscQuestion size="18px" style={{marginLeft:"5px", color:"gray"}}/>
                             </span>
                            </div>

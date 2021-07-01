@@ -67,7 +67,7 @@ const Pools = () => {
                             <button className="boxContainerLeftPoolsOptionTopButton" style={{color: darkMode ? "#fff" : "#5A6AF0", backgroundColor: darkMode ? "#323742" : "#fff"}}>SETH</button>
                         </div>
                         <div className="boxContainerPoolsColumn2" style={{borderRight: darkMode ? "1px solid #22262A" : "1px solid #D8D8D8"}}>
-                            <div style={{display:"flex", textAlign:"center"}}>
+                            <div style={{display:"flex", textAlign:"center",  paddingBottom:"6px"}}>
                                 <span><img src={poolsImg2} className="currencyImage" alt="DAI"/></span>
                                 <span className="boxContainerPoolsColumn2Value" style={{color: darkMode ? "#fff" : "#323742"}}>$4,534,375.88</span>
                             </div>

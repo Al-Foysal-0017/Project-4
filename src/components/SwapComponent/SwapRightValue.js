@@ -13,7 +13,7 @@ const SwapRightValue = () => {
         <>
             <div className="boxContainerRightTop">
                             <div className="boxContainerRightTopHeader">
-                                <div className="boxContainerRightTopHeaderLeft" style={{color: darkMode ? "#ffffff" : "#5A6AF0", paddingTop:"15px"}}>
+                                <div className="boxContainerRightTopHeaderLeft" style={{color: darkMode ? "#ffffff" : "#5A6AF0", paddingTop:"9px"}}>
                                 {t('To')}
                                 </div>
                                 <div className="boxContainerRightTopHeaderRight"></div>

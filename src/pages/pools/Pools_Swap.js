@@ -45,10 +45,16 @@ const Pools_Swap = () => {
                         <div className="boxContainerLeftPoolsOptionTopValuesSet">
                             <TotalValueLocked/>
                         </div>
-                        <div style={{paddingTop:"20px", paddingBottom:"10px"}} className="boxContainerLeftPoolsOptionTopValueName">
+                        {/* <div style={{paddingTop:"3px", paddingBottom:"1px"}} className="boxContainerLeftPoolsOptionTopValueName">
                         {t('Underlying_Tokens')}
                         </div>
+                        <UnderlyingTokens/> */}
+                        <div style={{paddingTop:"20px", paddingBottom:"5px", paddingLeft:"20px"}} className="boxContainerLeftPoolsOptionTopValueName">
+                                {t('Underlying_Tokens')} 
+                        </div>
+                        <div style={{paddingLeft:"8px",}}>
                         <UnderlyingTokens/>
+                        </div>
                     </div>
                     <div className="boxContainerLeftPoolsOptionBottom" style={{borderTop: darkMode ? "1px solid #22262A" : "1px solid #D8D8D8"}}>
                     <Chart data={userData} title="$" grid dataKey="$"/>

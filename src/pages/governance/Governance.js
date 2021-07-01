@@ -13,10 +13,12 @@ import { useTranslation } from 'react-i18next'
 //   import DateFnsUtils from '@date-io/date-fns';
   import { DatePicker } from 'antd';
   import moment from 'moment';
-  
 //   const { RangePicker } = DatePicker;
   
   const dateFormat = 'YYYY/MM/DD';
+
+
+
 
 const Governance = () => {
     // const [startDate, setStartDate] = useState(new Date());
@@ -116,11 +118,11 @@ const Governance = () => {
                                 <Grid.Column></Grid.Column>
                                 {/* <Grid.Column></Grid.Column> */}
                                 <Grid.Column>
-                                    <button className="boxContainerRightGovTopButton">
-                                        <Link to="/governance-info" style={{color:"#fff"}}>
+                                    <div>
+                                        <Link to="/governance-info" style={{color:"#fff"}} className="boxContainerRightGovTopButton">
                                         {t('New_Proposal')}
                                         </Link>
-                                    </button>
+                                    </div>
                                 </Grid.Column>
                                 </Grid.Row>
                                 <Grid.Row>
@@ -137,44 +139,69 @@ const Governance = () => {
                         <div className="boxContainerRightGovCenter" style={{borderTop: darkMode ? "1px solid #22262A" : "1px solid #D8D8D8"}}>
                         <Form className="boxContainerRightGovCenterForm">
                             <Form.Group widths='equal'>
+                            <div style={{marginRight:"20px"}}>
                             <Form.Field
-                                style={{backgroundColor: darkMode?"#22262A":"#fff"}}
+                                style={{backgroundColor: darkMode?"#22262A":"#fff", display:"flex", justifyContent:"space-between", paddingLeft:"35px"}}
                                 control={Select}
                                 options={Options}
                                 label={{ children: t('Status'), htmlFor: 'form-select-control' }}
                                 placeholder={t('All')}
-                                search
-                                searchInput={{ id: 'form-select-control' }}
+                                icon="chevron down"
+                                
                             />
+                            </div>
+                            <div style={{marginRight:"20px"}}>
                             <Form.Field
-                                style={{backgroundColor: darkMode?"#22262A":"#fff"}}
+                                style={{backgroundColor: darkMode?"#22262A":"#fff", display:"flex", justifyContent:"space-between", paddingLeft:"35px"}}
                                 control={Select}
                                 options={Options}
                                 label={{ children: t('Outcome'), htmlFor: 'form-select-control' }}
                                 placeholder={t('All')}
-                                search
-                                searchInput={{ id: 'form-select-control' }}
+                                icon="chevron down"
+                                
                             />
+                            </div>
+                            <div style={{marginRight:""}}>
                             <Form.Field
-                                style={{backgroundColor: darkMode?"#22262A":"#fff"}}
+                                style={{backgroundColor: darkMode?"#22262A":"#fff", display:"flex", justifyContent:"space-between", paddingLeft:"35px"}}
                                 control={Select}
                                 options={Options}
                                 label={{ children: t('App'), htmlFor: 'form-select-control' }}
                                 placeholder={t('All')}
-                                search
-                                searchInput={{ id: 'form-select-control' }}
+                                icon="chevron down"
+                                
                             />
+                            </div>
+                            {/* <Form.Field
+                                style={{backgroundColor: darkMode?"#22262A":"#fff", display:"flex", justifyContent:"space-between"}}
+                                control={Select}
+                                options={Options}
+                                label={{ children: t('Outcome'), htmlFor: 'form-select-control' }}
+                                placeholder={t('All')}
+                                icon="chevron down"
+                            />
+                            <Form.Field
+                                style={{backgroundColor: darkMode?"#22262A":"#fff", display:"flex", justifyContent:"space-between"}}
+                                control={Select}
+                                options={Options}
+                                label={{ children: t('App'), htmlFor: 'form-select-control' }}
+                                placeholder={t('All')}
+                                icon="chevron down"
+                            />
+                              */}
                             </Form.Group>
                         </Form>
                         </div>
-                        <div className="boxContainerRightGovBottom">
+
+                       
+                        <div className="boxContainerRightGovBottom" style={{marginTop:"5px"}}>
                             <div className="boxContainerRightGovBottomBox" style={{backgroundColor: darkMode ? "#323742" : "#ffffff", border: darkMode ? "1px solid #22262A" : "1px solid #D8D8D8"}}>
-                                <button className="boxContainerRightGovBottomButton" style={{background: darkMode ? "#5A6AF0" : "#fff", color: darkMode? "#fff":"#5A6AF0"}}>
+                                <div className="boxContainerRightGovBottomButton" style={{background: darkMode ? "#5A6AF0" : "#fff", color: darkMode? "#fff":"#5A6AF0"}}>
                                     {t('Active')}
-                                </button>
+                                </div>
                                 <div className="boxContainerRightGovBottomHeader" style={{color: darkMode ? "#ffffff" : "#323742"}}>
                                     {t('Pool_proxy')}</div>
-                                <div className="boxContainerRightGovBottomBody" style={{color: darkMode ? "#ffffff" : "#323742"}}>
+                                <div className="boxContainerRightGovBottomBody">
                                     {t('LOREM1')}
                                 </div>
                                 <div className="boxContainerRightGovBottomFooter" style={{color: darkMode ? "#ffffff" : "#323742"}}>05D:13H-33M:44S</div>
