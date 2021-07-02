@@ -111,6 +111,7 @@
     border-radius: 25px;
     background-color: #5A6AF0;
     margin-right: 20px;
+    margin-right: 30px;
 }
 .boxContainerRightGovCenter{
     flex: 3;
@@ -290,7 +291,6 @@
     color: #fff!important;
 }
 
-
 .setTwoBoxForDate{
     display: flex;
     flex-direction: column;
@@ -468,7 +468,7 @@
         margin-top: 160px;
     }
     .boxContainerRightGovTopButton{
-        /* margin-right: 20px; */
+        margin-right: 1px;
         padding: 10px;
         border-radius: 20px;
     }
