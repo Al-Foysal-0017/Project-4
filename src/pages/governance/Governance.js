@@ -113,12 +113,12 @@ const Governance = () => {
                             <div className="boxContainerRightGovTop">
                             <Grid columns='equal'>
                                 <Grid.Row>
-                                <Grid.Column></Grid.Column>
-                                <Grid.Column></Grid.Column>
-                                <Grid.Column></Grid.Column>
+                                <Grid.Column ></Grid.Column>
+                                {/* <Grid.Column ></Grid.Column> */}
+                                {/* <Grid.Column></Grid.Column> */}
                                 {/* <Grid.Column></Grid.Column> */}
                                 <Grid.Column>
-                                    <div>
+                                    <div style={{display:"flex", flexDirection:"row-reverse"}}>
                                         <Link to="/governance-info" style={{color:"#fff"}} className="boxContainerRightGovTopButton">
                                         {t('New_Proposal')}
                                         </Link>
