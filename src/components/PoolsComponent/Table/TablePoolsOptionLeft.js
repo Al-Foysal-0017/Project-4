@@ -9,8 +9,7 @@ import USDCimage from "../../../images/USDC.jpg"
 import { Link } from 'react-router-dom'
 import PoolTopbar from '../PoolTopbar'
 import { AiOutlineLeft } from "react-icons/ai";
-import Chart from "../Chart"
-import { userData } from "../../../dummyData.js";
+// import Chart from "../Chart"
 import { useTranslation } from 'react-i18next'
 
 const TablePoolsOptionLeft = () => {
@@ -32,15 +31,17 @@ const TablePoolsOptionLeft = () => {
                         </div>
                         <div className="containerCenterHeaderPoolsOptionBoxRight"></div>
             </div>
-            <div style={{backgroundColor: darkMode ? "#323742" : "#ffffff"}}>
+            <div style={{backgroundColor: darkMode ? "#323742" : "#ffffff", paddingTop:"20px"}}>
             <PoolTopbar/>
             </div>
             
             <div style={{padding:"25px" ,backgroundColor: darkMode ? "#323742" : "#ffffff"}}>
             <Segment padded='very' textAlign='center' style={{borderRadius:"25px", backgroundColor: darkMode ? "#464B58" : "#ffffff"}}>
-            <div className="" style={{paddingTop:"20px", paddingBottom:"20px"}}>
+            <div className="" style={{paddingTop:"20px", paddingBottom:"20px",}}>
+                            <div style={{}}>
                             <CurrencyName/>
-                            <div className="boxContainerLeftPoolsOptionTopValuesSet">
+                            </div>
+                            <div className="boxContainerLeftPoolsOptionTopValuesSet" style={{display:"flex", justifyContent:"center"}}>
                                 <TotalValueLocked/>
                             </div>
                             <div style={{paddingTop:"20px", marginLeft:"10px"}} className="boxContainerLeftPoolsOptionTopValueName">
@@ -67,7 +68,8 @@ const TablePoolsOptionLeft = () => {
             </div>
             </div>
             <div style={{display:"flex", justifyContent:"center", }}>
-            <Chart data={userData} title="User Analytics" grid dataKey="$" />
+            {/* <Chart  /> */}
+            {/* <Chart data={userData} title="User Analytics" grid dataKey="$"/> */}
             </div>
             
             </Segment>

@@ -204,7 +204,7 @@ const Swap_Details = () => {
                             </div>
                             
                         </div>
-                        <button className="buttonSwapDetails">{t('Details')}</button>
+                        <div className="buttonSwapDetails">{t('Details')}</div>
                     </div>
                     </div>
                 </div>

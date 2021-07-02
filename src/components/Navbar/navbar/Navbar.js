@@ -15,7 +15,7 @@ const Navbar = ({toggle}) => {
     const { t } = useTranslation()
     return (
         <>
-         <div className="Nav" style={{backgroundColor: darkMode ? "#323742" : "#fff"}}>
+         <div className="Nav" style={{backgroundColor: darkMode ? "#323742" : "#fff",}}>
              <div className="NavbarContainer">
                  <div className="NavLogo">
                  <Link to="/">

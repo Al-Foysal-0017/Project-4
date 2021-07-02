@@ -25,9 +25,9 @@ const Governance = () => {
     let darkMode = localStorage.getItem('theme')=== 'theme-dark';
     const { t } = useTranslation()
     const Options = [
-        { key: 'm', text: 'One', value: 'one' },
-        { key: 'f', text: 'Two', value: 'two' },
-        { key: 'o', text: 'Three', value: 'three' },
+        { key: 'm', text: 'All', value: 'one' },
+        { key: 'f', text: 'Few', value: 'two' },
+        { key: 'o', text: 'Little', value: 'three' },
       ]
     //   const [selectedDate, setSelectedDate] = React.useState(new Date('2014-08-18T21:11:54'));
 

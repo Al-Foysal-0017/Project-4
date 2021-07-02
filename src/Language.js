@@ -118,7 +118,7 @@
 
 
                   <Dropdown
-                    style={{color: darkMode?"#fff":"#5A6AF0", marginTop:"19px", backgroundColor: darkMode ? "#22262A" :"#F7F8FD", padding:"7px 12px 7px 12px", borderRadius:"15px", fontWeight:"100"}}
+                    style={{color:"#5A6AF0", marginTop:"19px", backgroundColor: darkMode ? "#22262A" :"#F7F8FD", padding:"7px 12px 7px 12px", borderRadius:"15px", fontWeight:"100"}}
                     // button
                     inline
                     // className='icon'
