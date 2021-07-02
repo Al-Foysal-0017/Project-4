@@ -420,6 +420,11 @@
     .HeaderManageLocking{
         margin-top: 25px;
     }
+    .boxContainerRightGovTopButton{
+        margin-right: 1px;
+        padding: 10px 22px;
+        border-radius: 20px;
+    }
 
 }
 
@@ -468,8 +473,8 @@
         margin-top: 160px;
     }
     .boxContainerRightGovTopButton{
-        margin-right: 1px;
-        padding: 10px;
+        margin-right: -15px;
+        padding: 10px 22px;
         border-radius: 20px;
     }
     .boxContainerRightGovBottomBody{
