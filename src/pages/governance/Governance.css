@@ -465,12 +465,12 @@
         padding-bottom: 2px;
     }
     .boxContainerRightGov{
-        margin-top: 120px;
+        margin-top: 160px;
     }
     .boxContainerRightGovTopButton{
         /* margin-right: 20px; */
-        padding: 5px;
-        border-radius: 10px;
+        padding: 10px;
+        border-radius: 20px;
     }
     .boxContainerRightGovBottomBody{
         display: none;

@@ -48,11 +48,15 @@ const Swap = () => {
                        </div>
                        <div className="footerInfoMobile">
                             <span className="footerInfoIcon">
-                               <BiCheckboxChecked size="18px" style={{marginRight:"2px", color:"#A3B7A7"}}/>
-                               {t('InfiAppo')}
+                               {/* <BiCheckboxChecked size="18px" style={{marginRight:"2px", color:"#A3B7A7"}}/> */}
+                               {/* {t('InfiAppo')} */}
+                               <Checkbox onChange={onChange} style={{fontSize:"13px", color:"gray"}}>{t('InfiAppo')}</Checkbox>
                                <VscQuestion size="18px" style={{marginLeft:"5px", color:"gray"}}/>
                             </span>
-                           <button className="footerButton" style={{marginTop:"15px"}}>{t('Swap')}</button> 
+                           {/* <button className="footerButton" style={{marginTop:"15px"}}>{t('Swap')}</button>  */}
+                           <Link to="/swap/details">
+                           <button className="footerButton">{t('Swap')}</button>
+                           </Link>
                        </div>
                     </div>
                    </div>
